@@ -1,0 +1,8 @@
+# Ignorer le dossier node_modules où sont stockées les dépendances Node.js
+node_modules/
+
+# Ignorer les fichiers .DS_Store créés par macOS
+.DS_Store
+
+# Ignorer tous les fichiers avec l'extension .log (fichiers de log)
+*.log
