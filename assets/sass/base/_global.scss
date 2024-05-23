@@ -1,0 +1,20 @@
+@use "../utils/variables" as *;
+
+* {
+    font-family: $font-texte;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 320px;
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
