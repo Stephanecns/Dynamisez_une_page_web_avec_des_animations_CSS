@@ -1,0 +1,42 @@
+@use "../utils/variables" as *;
+
+.header {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 42px;
+        box-shadow: 0px 2px 4px 0px;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        background: #eaeaea;
+        justify-content: center;
+        gap: 17px;
+        box-shadow: 0px 4px 4px 0px;
+    }
+
+
+
+    &__back-link{
+        display: none;
+    }
+
+    &__title {
+        font-family: $font-logo;
+        font-weight: 400;
+    }
+
+    &__location {
+        font-weight: 500;
+    }
+}
