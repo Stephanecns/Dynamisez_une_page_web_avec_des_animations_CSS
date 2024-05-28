@@ -23,8 +23,8 @@
 
     &__links {
         p {
-            margin: 0;
             padding-bottom: 7px;
+            margin: 0;
         }
     }
 
@@ -41,6 +41,33 @@
 
         & .space {
             margin-right: 7px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: baseline;
+        }
+
+        &__logo {
+
+            order: 2;
+            margin-left: 30px;
+        }
+
+        &__links {
+            display: flex;
+        }
+
+        &__link-item p {
+            padding-right: 10px;
+        }
+
+        &__legal {
+            padding: 0px 10px 7px 40px;
         }
     }
 

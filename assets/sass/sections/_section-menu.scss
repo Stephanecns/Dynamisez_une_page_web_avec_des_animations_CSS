@@ -5,3 +5,12 @@
         object-fit: cover;
     }
 }
+
+@media (min-width: 1025px) {
+    .section-menu {
+
+        &__image {
+            height: 448px;
+        }
+    }
+}

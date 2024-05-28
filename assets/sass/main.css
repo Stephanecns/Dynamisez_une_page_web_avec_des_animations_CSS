@@ -12,7 +12,7 @@ body {
   width: 100%;
   max-width: 1440px;
   min-width: 320px;
-  padding: 0 50px;
+  /*padding: 0 50px;*/
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -75,8 +75,8 @@ a {
   font-weight: 400;
 }
 .footer__links p {
-  margin: 0;
   padding-bottom: 7px;
+  margin: 0;
 }
 .footer__link-item {
   display: flex;
@@ -88,6 +88,27 @@ a {
 }
 .footer__link-item .space {
   margin-right: 7px;
+}
+@media (min-width: 1025px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+  .footer__logo {
+    order: 2;
+    margin-left: 30px;
+  }
+  .footer__links {
+    display: flex;
+  }
+  .footer__link-item p {
+    padding-right: 10px;
+  }
+  .footer__legal {
+    padding: 0px 10px 7px 40px;
+  }
 }
 
 .section-reservation__container {
@@ -116,6 +137,9 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.section-fonctionnement__container {
+  padding: 0px 20px 0px 20px;
+}
 .section-fonctionnement__title {
   margin: 48px 0px 26px 0px;
 }
@@ -166,6 +190,12 @@ a {
   font-weight: 500;
 }
 
+@media (min-width: 1025px) {
+  .section-fonctionnement__steps {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
 .section-restaurants__container {
   background: #f6f6f6;
   padding-bottom: 66px;
@@ -236,6 +266,15 @@ a {
   font-weight: 300;
 }
 
+@media (min-width: 1025px) {
+  .section-restaurants__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+  }
+}
 .heart-icon {
   position: relative;
   width: 24px;
@@ -267,6 +306,11 @@ a {
      object-fit: cover;
 }
 
+@media (min-width: 1025px) {
+  .section-menu__image {
+    height: 448px;
+  }
+}
 .menu-wrapper {
   border-radius: 40px 40px 0px 0px;
   background: #F7F7F7;
@@ -330,6 +374,21 @@ a {
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .menu-container {
+    display: grid;
+    justify-content: center;
+  }
+  .menu-container .menu-section__card {
+    width: 634px;
+  }
+}
+@media (min-width: 1025px) {
+  .menu-wrapper {
+    width: 80%;
+    margin-left: 119px;
+  }
+}
 .specific-page-button {
   text-align: center;
   margin: 40px 0px 0px 0px;

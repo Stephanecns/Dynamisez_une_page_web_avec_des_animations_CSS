@@ -79,4 +79,16 @@
       font-weight: 300;
     }
   }
+
+  @media (min-width: 1025px) {
+    .section-restaurants {
+        &__cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 100px;
+          grid-row-gap: 50px;
+        }
+    }
+}
   

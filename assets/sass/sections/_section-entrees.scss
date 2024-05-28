@@ -47,3 +47,31 @@
         }
     }
 }
+
+
+
+@media (min-width: 768px){
+
+
+    .menu-container {
+        display: grid;
+        justify-content: center;
+
+        .menu-section {
+            &__card {
+                width: 634px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .menu-wrapper {
+
+        width: 80%;
+        margin-left: 119px;
+    }
+
+}
