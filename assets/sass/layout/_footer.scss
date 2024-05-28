@@ -2,7 +2,6 @@
 
 .footer {
 
-
     &__container {
         display: flex;
         padding: 22px 25px;
@@ -10,8 +9,11 @@
         gap: 16px;
         background: #353535;
         color: white;
-    }
 
+        &.specific-footer {
+            margin-top: -62px;
+        }
+    }
 
     &__title {
         font-family: $font-logo;

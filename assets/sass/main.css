@@ -42,11 +42,17 @@ a {
   box-shadow: 0px 4px 4px 0px;
 }
 .header__back-link {
-  display: none;
+  padding: 24px 23px 23px 23px;
+  flex: 1;
+  font-size: 20px;
 }
 .header__title {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
+}
+.header__title.flex-auto {
+  flex: auto;
+  margin-right: 40px;
 }
 .header__location {
   font-weight: 500;
@@ -59,6 +65,9 @@ a {
   gap: 16px;
   background: #353535;
   color: white;
+}
+.footer__container.specific-footer {
+  margin-top: -62px;
 }
 .footer__title {
   font-family: "Shrikhand", sans-serif;
@@ -99,6 +108,7 @@ a {
   color: white;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -162,7 +172,7 @@ a {
 }
 .section-restaurants__header {
   margin: 68px 0px 13px 0px;
-  padding: 64px 0px 0px 20px;
+  padding: 38px 0px 0px 20px;
 }
 .section-restaurants__cards {
   display: flex;
@@ -249,4 +259,78 @@ a {
 }
 .heart-icon:hover .heart-icon__filled {
   opacity: 1;
+}
+
+.section-menu__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-wrapper {
+  border-radius: 40px 40px 0px 0px;
+  background: #F7F7F7;
+  position: relative;
+  bottom: 62px;
+  padding-bottom: 40px;
+}
+.menu-wrapper .menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.menu-wrapper .menu-header__title {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+  padding-right: 24px;
+}
+
+.menu-section {
+  margin-bottom: 40px;
+}
+.menu-section__header-title {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 2px solid #99E2D0;
+  width: 39px;
+}
+.menu-section__card {
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 634px;
+  margin-top: 12px;
+}
+.menu-section__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.menu-section__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu-section__description span {
+  color: #353535;
+  text-align: center;
+  font-size: 15.043px;
+  font-weight: 700;
+}
+
+.specific-page-button {
+  text-align: center;
+  margin: 40px 0px 0px 0px;
 }/*# sourceMappingURL=main.css.map */

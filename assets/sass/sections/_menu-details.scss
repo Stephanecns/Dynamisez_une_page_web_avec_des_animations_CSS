@@ -1,0 +1,22 @@
+.menu-wrapper {
+    border-radius: 40px 40px 0px 0px;
+    background: #F7F7F7;
+    position: relative;
+    bottom: 62px;
+    padding-bottom: 40px;
+
+    .menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        &__title {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 400;
+            padding-right: 24px;
+        }
+
+    }
+}

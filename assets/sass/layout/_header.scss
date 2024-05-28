@@ -25,15 +25,19 @@
         box-shadow: 0px 4px 4px 0px;
     }
 
-
-
-    &__back-link{
-        display: none;
+    &__back-link {
+        padding: 24px 23px 23px 23px;
+        flex: 1;
+        font-size: 20px;
     }
 
     &__title {
         font-family: $font-logo;
         font-weight: 400;
+        &.flex-auto{
+            flex: auto;
+            margin-right: 40px;
+        }
     }
 
     &__location {
