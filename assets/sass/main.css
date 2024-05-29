@@ -348,6 +348,29 @@ a {
   padding: 15px;
   max-width: 634px;
   margin-top: 12px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.menu-section__card:hover .menu-section__confirmation {
+  width: 25px;
+  height: 22px;
+  background-color: #99E2D0;
+  transform: translateX(-100%);
+}
+.menu-section__card:hover .menu-section__price span {
+  margin-right: 48px;
+  padding-left: 48px;
+}
+.menu-section__details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu-section__content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu-section__title {
   overflow: hidden;
@@ -363,15 +386,36 @@ a {
   white-space: nowrap;
   font-size: 15px;
   font-weight: 300;
-  display: flex;
-  justify-content: space-between;
   margin: 0;
 }
-.menu-section__description span {
+.menu-section__price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 15px;
+}
+.menu-section__price span {
   color: #353535;
   text-align: center;
   font-size: 15.043px;
   font-weight: 700;
+}
+.menu-section__confirmation {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0 15.0431px 15.0431px 0;
+  transition: transform 250ms, background-color 250ms;
+  transform: translateX(0%);
+  padding: 24px 19px;
+}
+.menu-section__confirmation-logo {
+  font-size: 20px;
+  color: white;
+  position: absolute;
 }
 
 @media (min-width: 768px) {

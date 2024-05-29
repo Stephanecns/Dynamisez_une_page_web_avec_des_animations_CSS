@@ -1,5 +1,4 @@
 .menu-section {
-
     margin-bottom: 40px;
 
     &__header-title {
@@ -10,7 +9,6 @@
         width: 39px;
     }
 
-
     &__card {
         border-radius: 15px;
         background: white;
@@ -18,6 +16,34 @@
         padding: 15px;
         max-width: 634px;
         margin-top: 12px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:hover .menu-section__confirmation {
+            width: 25px;
+            height: 22px;
+            background-color: #99E2D0;
+            transform: translateX(-100%);
+        }
+
+        &:hover .menu-section__price span {
+            margin-right: 48px;
+            padding-left: 48px;
+        }
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    &__content {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
     }
 
     &__title {
@@ -35,9 +61,14 @@
         white-space: nowrap;
         font-size: 15px;
         font-weight: 300;
-        display: flex;
-        justify-content: space-between;
         margin: 0;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 15px;
 
         span {
             color: #353535;
@@ -46,11 +77,30 @@
             font-weight: 700;
         }
     }
+
+    &__confirmation {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 100%;
+        background-color: transparent;
+        border-radius: 0 15.0431px 15.0431px 0;
+        transition: transform 250ms, background-color 250ms;
+        transform: translateX(0%);
+        padding: 24px 19px;
+
+        &-logo {
+            font-size: 20px;
+            color: white;
+            position: absolute;
+        }
+    }
 }
 
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
 
     .menu-container {
