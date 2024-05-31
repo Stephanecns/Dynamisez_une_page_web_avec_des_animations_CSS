@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .section-fonctionnement {
 
     &__container {
@@ -33,7 +35,7 @@
         left: -12px;
         bottom: -13px;
         font-size: 24px;
-        color: #9356DC;
+        color: $primary-color;
     }
 
     &__number {
@@ -64,7 +66,7 @@
     }
 
     .color {
-        color: #9356DC;
+        color: $primary-color;
     }
 
     &__description {
@@ -80,5 +82,24 @@
             gap: 40px;
         }
 
+        &__container{
+            padding-left: 80px;
+        }
+
     }
 }
+
+@media (min-width: 768px) and (max-width :1025px) {
+    .section-fonctionnement {
+        &__container{
+            display: grid;
+            justify-content: center;
+        }
+
+        &__step-content{
+        width: 323px;
+        }
+
+    }
+}
+

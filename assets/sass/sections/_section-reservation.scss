@@ -7,6 +7,20 @@
 
     &__description {
         font-weight: 300;
+        color: #353535;
     }
 
+}
+
+@media (min-width: 1025px) {
+    .section-reservation {
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+    }
 }

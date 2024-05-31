@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .heart-icon {
     position: relative;
     width: 24px;
@@ -13,7 +15,7 @@
   
     &__filled {
       color: transparent;
-      background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+      background: linear-gradient(193deg, $primary-color -11.44%, $secondary-color 123.93%);
       -webkit-background-clip: text;
       background-clip: text;
       z-index: 1;

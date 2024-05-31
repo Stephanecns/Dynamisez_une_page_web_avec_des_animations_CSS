@@ -10,7 +10,7 @@
     align-items: center; // Centre verticalement le loader
     justify-content: center; // Centre horizontalement le loader
     z-index: 9999; // Assure que le loader est au-dessus de tous les autres éléments
-    animation: fadeOut 3s forwards; // Anime le fade-out du loader
+    animation: fadeOut 6s forwards; // Anime le fade-out du loader
 
     .loader {
         // Styles du loader principal
