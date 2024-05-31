@@ -75,21 +75,26 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1245px) {
     .section-fonctionnement {
         &__steps {
             flex-direction: row;
-            gap: 40px;
+            gap: 80px;
         }
 
         &__container{
             padding-left: 80px;
         }
+        
+        &__step-content{
+            width: 300px;
+        }
+
 
     }
 }
 
-@media (min-width: 768px) and (max-width :1025px) {
+@media (min-width: 767.98px) and (max-width :1245px) {
     .section-fonctionnement {
         &__container{
             display: grid;

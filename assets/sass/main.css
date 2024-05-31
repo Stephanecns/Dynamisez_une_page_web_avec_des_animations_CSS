@@ -198,16 +198,19 @@ a {
   font-weight: 500;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1245px) {
   .section-fonctionnement__steps {
     flex-direction: row;
-    gap: 40px;
+    gap: 80px;
   }
   .section-fonctionnement__container {
     padding-left: 80px;
   }
+  .section-fonctionnement__step-content {
+    width: 300px;
+  }
 }
-@media (min-width: 768px) and (max-width: 1025px) {
+@media (min-width: 767.98px) and (max-width: 1245px) {
   .section-fonctionnement__container {
     display: grid;
     justify-content: center;
