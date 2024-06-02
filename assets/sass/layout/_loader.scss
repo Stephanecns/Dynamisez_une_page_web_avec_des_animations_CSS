@@ -10,7 +10,8 @@
     align-items: center; // Centre verticalement le loader
     justify-content: center; // Centre horizontalement le loader
     z-index: 9999; // Assure que le loader est au-dessus de tous les autres éléments
-    animation: fadeOut 6s forwards; // Anime le fade-out du loader
+    animation: fadeOut 6s forwards;
+    animation-delay: 2s; // Retarde le début de l'animation de 2 secondes
 
     .loader {
         // Styles du loader principal
@@ -39,7 +40,6 @@
     }
 
     .loader:after {
-    
         color: #9356DC; 
         transform: rotateY(70deg); // Rotation différente pour créer un effet 3D
         animation-delay: .4s; // Décalage de l'animation pour différencier les deux cercles

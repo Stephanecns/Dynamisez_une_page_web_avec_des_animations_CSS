@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -480,6 +481,97 @@ a {
   margin: 40px 0px 0px 0px;
 }
 
+/*.loader-container {
+    // Conteneur du loader : occupe toute la fenêtre et centré
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex; // Utilise flexbox pour centrer le contenu
+    align-items: center; // Centre verticalement le loader
+    justify-content: center; // Centre horizontalement le loader
+    z-index: 9999; // Assure que le loader est au-dessus de tous les autres éléments
+    animation: fadeOut 6s forwards; // Anime le fade-out du loader
+
+    .loader {
+        // Styles du loader principal
+        transform: rotateZ(45deg); // Rotation initiale
+        perspective: 1000px; // Perspective 3D
+        border-radius: 50%; 
+        width: 96px; 
+        height: 96px;
+        color: #FF79DA; 
+        position: relative; // Position relative pour les pseudo-éléments
+    }
+
+    .loader:before,
+    .loader:after {
+        // Styles communs aux pseudo-éléments
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit; 
+        height: inherit; 
+        border-radius: 50%;
+        transform: rotateX(70deg); 
+        animation: 1s spin linear infinite; // Animation de rotation
+    }
+
+    .loader:after {
+
+        color: #9356DC; 
+        transform: rotateY(70deg); // Rotation différente pour créer un effet 3D
+        animation-delay: .4s; // Décalage de l'animation pour différencier les deux cercles
+    }
+
+    // Animation de rotation
+    @keyframes spin {
+        0%, 100% {
+            box-shadow: .2em 0px 0 0px currentcolor;
+        }
+        12% {
+            box-shadow: .2em .2em 0 0 currentcolor;
+        }
+        25% {
+            box-shadow: 0 .2em 0 0px currentcolor;
+        }
+        37% {
+            box-shadow: -.2em .2em 0 0 currentcolor;
+        }
+        50% {
+            box-shadow: -.2em 0 0 0 currentcolor;
+        }
+        62% {
+            box-shadow: -.2em -.2em 0 0 currentcolor;
+        }
+        75% {
+            box-shadow: 0px -.2em 0 0 currentcolor;
+        }
+        87% {
+            box-shadow: .2em -.2em 0 0 currentcolor;
+        }
+    }
+
+    // Animation de disparition
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+            visibility: hidden; // Cache l'élément après la fin de l'animation
+            pointer-events: none; // Désactive les interactions avec l'élément
+        }
+    }
+}
+*/
 .loader-container {
   position: fixed;
   top: 0;
@@ -492,6 +584,7 @@ a {
   justify-content: center;
   z-index: 9999;
   animation: fadeOut 6s forwards;
+  animation-delay: 2s;
 }
 .loader-container .loader {
   transform: rotateZ(45deg);
